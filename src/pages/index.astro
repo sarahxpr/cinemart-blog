@@ -1,44 +1,57 @@
 ---
-import BaseLayout from "../layouts/Base.astro";
-import { SITE_TITLE } from "../consts";
+// import '../styles/global.css';
 ---
-<BaseLayout title={SITE_TITLE}>
-	<h1>🧑‍🚀 Hello, Astronaut!</h1>
-	<p>
-		Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template.
-		This template serves as a lightweight, minimally-styled starting point for anyone
-		looking to build a personal website, blog, or portfolio with Astro.
-	</p>
-	<p>
-		This template comes with a few integrations already configured in your
-		<code>astro.config.mjs</code> file. You can customize your setup with
-		<a href="https://astro.build/integrations">Astro Integrations</a> to add tools
-		like Tailwind, React, or Vue to your project.
-	</p>
-	<p>Here are a few ideas on how to get started with the template:</p>
-	<ul>
-		<li>Edit this page in <code>src/pages/index.astro</code></li>
-		<li>
-			Edit the site header items in <code>src/components/Header.astro</code>
-		</li>
-		<li>
-			Add your name to the footer in <code>src/components/Footer.astro</code>
-		</li>
-		<li>Check out the included blog posts in <code>src/pages/blog/</code></li>
-		<li>
-			Customize the blog post page layout in <code
-				>src/layouts/BlogPost.astro</code>
-		</li>
-	</ul>
-	<p>
-		Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-			>read the docs
-		</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-	</p>
-	<p>
-		Looking for a blog template with a bit more personality? Check out <a
-			href="https://github.com/Charca/astro-blog-template"
-			>astro-blog-template
-		</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-	</p>
-</BaseLayout>
+
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>Notre super blog</title>
+	</head>
+	<body>
+		<header>
+			<p>Notre super Blog&nbsp;!</p>
+			<nav>
+				<a href="/">Accueil</a>
+			</nav>
+		</header>
+		<main>
+			<h1>🧑‍🚀 Salut les Astronautes&nbsp;!</h1>
+			<p>
+				Bienvenue dans ce template/boilerplate/starter <a href="https://astro.build/">Astro</a>. Ce projet vous servira de base pour réaliser votre blog.
+			</p>
+			<p>
+				Ce template ne comporte pas grand chose pour l'instant. Nous allons le faire évoluer ensemble pendant les cours. Vous devrez certainement y travailler dessus en dehors des cours également.
+			</p>
+			<p>Afin de prendre ce template en main, voici quelques petits trucs à tester&nbsp;:</p>
+			<ul>
+				<li>Éditer cette page dans <code>src/pages/index.astro</code></li>
+				<li>
+					Ajouter du CSS dans <code>src/styles/global.css</code>
+				</li>
+				<li>
+					Créer des composants pour le header et le footer dans <code>src/components/</code
+					>
+				</li>
+				<li>
+					Créer un premier article dans <code>src/content/blog/</code>
+				</li>
+			</ul>
+			<p>
+				Lezgongue! <a
+				href="https://docs.astro.build/fr/getting-started/"
+				>La documentation</a> est disponible (en français).
+			</p>
+		</main>
+		<footer>Made in Toulouse, France.</footer>
+	</body>
+</html>
+
+<style>
+:root {
+	color-scheme: light dark;
+}
+</style>
