@@ -1,57 +1,47 @@
 ---
-// import '../styles/global.css';
+import BaseLayout from "../layouts/Base.astro";
 ---
 
-<!DOCTYPE html>
-<html lang="fr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>Notre super blog</title>
-	</head>
-	<body>
-		<header>
-			<p>Notre super Blog&nbsp;!</p>
-			<nav>
-				<a href="/">Accueil</a>
-			</nav>
-		</header>
-		<main>
-			<h1>🧑‍🚀 Salut les Astronautes&nbsp;!</h1>
-			<p>
-				Bienvenue dans ce template/boilerplate/starter <a href="https://astro.build/">Astro</a>. Ce projet vous servira de base pour réaliser votre blog.
-			</p>
-			<p>
-				Ce template ne comporte pas grand chose pour l'instant. Nous allons le faire évoluer ensemble pendant les cours. Vous devrez certainement y travailler dessus en dehors des cours également.
-			</p>
-			<p>Afin de prendre ce template en main, voici quelques petits trucs à tester&nbsp;:</p>
-			<ul>
-				<li>Éditer cette page dans <code>src/pages/index.astro</code></li>
-				<li>
-					Ajouter du CSS dans <code>src/styles/global.css</code>
-				</li>
-				<li>
-					Créer des composants pour le header et le footer dans <code>src/components/</code
-					>
-				</li>
-				<li>
-					Créer un premier article dans <code>src/content/blog/</code>
-				</li>
-			</ul>
-			<p>
-				Lezgongue! <a
-				href="https://docs.astro.build/fr/getting-started/"
-				>La documentation</a> est disponible (en français).
-			</p>
-		</main>
-		<footer>Made in Toulouse, France.</footer>
-	</body>
-</html>
-
+<BaseLayout>
+	<main>
+		<h1>🧑‍🚀 Salut les Astronautes&nbsp;!</h1>
+		<p>
+			Bienvenue dans ce template/boilerplate/starter <a
+				href="https://astro.build/">Astro</a
+			>. Ce projet vous servira de base pour réaliser votre blog.
+		</p>
+		<p>
+			Ce template ne comporte pas grand chose pour l'instant. Nous allons
+			le faire évoluer ensemble pendant les cours. Vous devrez
+			certainement y travailler dessus en dehors des cours également.
+		</p>
+		<p>
+			Afin de prendre ce template en main, voici quelques petits trucs à
+			tester&nbsp;:
+		</p>
+		<ul>
+			<li>Éditer cette page dans <code>src/pages/index.astro</code></li>
+			<li>
+				Ajouter du CSS dans <code>src/styles/global.css</code>
+			</li>
+			<li>
+				Créer des composants pour le header et le footer dans <code
+					>src/components/</code
+				>
+			</li>
+			<li>
+				Créer un premier article dans <code>src/content/blog/</code>
+			</li>
+		</ul>
+		<p>
+			Lezgongue! <a href="https://docs.astro.build/fr/getting-started/"
+				>La documentation</a
+			> est disponible (en français).
+		</p>
+	</main>
+</BaseLayout>
 <style>
-:root {
-	color-scheme: light dark;
-}
+	body {
+		color: red;
+	}
 </style>
